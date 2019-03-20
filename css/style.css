@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 300;
+    color:#666;
+}
+.cityimg1, .cityimg2, .cityimg3{
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*
+fixed = paralax
+scroll = normal
+*/
+
+.cityimg1{
+    background-image: url('../img/city1.jpg');
+    min-height:100%;
+}
+.cityimg2{
+    background-image: url('../img/city2.jpg');
+    min-height:400px;
+}
+.cityimg3{
+    background-image: url('../img/city3.jpg');
+    min-height:400px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color:#000;
+    font-size: 27px;
+}
+.ptext .border{
+    background-color:#111;
+    color: white;
+    padding: 20px;
+}
+.ptext .border .trans{
+background-color: transparent;
+}
+
+@media(max-width: 568px){
+    .cityimg1 .cityimg2 .cityimg3{
+        background-attachment: scroll;
+    }
+}
+
+
+
+h2{
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: black;
+    font-weight: 300;
+    
+}
+
+nav{
+    justify-content: center;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    max-width: 100%;
+}
+img {
+width: 100%;
+}
+
+
+
+/* drop down button */
+.dropbtn{
+    font-family: 'Raleway', sans-serif;
+    background-color:  white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* container <div> for positioning */
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    font-family: 'Raleway', sans-serif;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/*links that are inside the dropdown*/
+.dropdown-content a {
+    color: #8c979e;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* change color upon hover*/
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* show the drop down when on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* change the color of background of drop down button when content is shown */
+.dropdown:hover .dropbtn{color: blue;}
+
+
