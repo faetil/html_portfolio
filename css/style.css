@@ -10,6 +10,33 @@ body, html{
     font-weight: 300;
     color:#666;
 }
+.social-icons{
+    text-align: right;
+}
+.social-icons li{
+    display:inline-block;
+    list-style-type: none;
+}
+.social-icons li a{
+    border-bottom: none;
+}
+.social-icons li img{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+.lang-icons{
+    text-align: left;
+}
+.lang-icons li{
+    display:inline-block;
+    list-style-type: none;
+}
+.lang-icons li img{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
 .cityimg1, .cityimg2, .cityimg3{
     position: relative;
     opacity: 0.90;
