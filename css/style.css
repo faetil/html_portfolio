@@ -12,7 +12,7 @@ body, html{
 }
 .cityimg1, .cityimg2, .cityimg3{
     position: relative;
-    opacity: 0.80;
+    opacity: 0.90;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@ scroll = normal
     position: absolute;
     top: 50%;
     width: 100%;
-    text-align: center;
+    text-align: left;
     color:#000;
     font-size: 27px;
 }
