@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
+//properties for the footer//
 footer{
+    background-color: #282e34;
+    color: #ddd;
     display: flex;
     justify-content: center;
 }
 
+.foot-icons{
+    display: flex;
+    width:50%;
+    justify-content: center;
+}
+//properties for both the html and body tags//
 body, html{
     height: 100%;
     margin: 0;
@@ -12,27 +22,28 @@ body, html{
     font-weight: 300;
     color:#666;
 }
-
+//section tag and id first-section with flex
 section#first-section{
+    text-align: justify;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     
 }
-
+//h2 class
 .h2-title{
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
 }
-
+//bio class
 .bio{
+    
     flex: 3;    
 }
-
+//profile class
 .profile{
     flex: 1;
-    
-    
+    //img tag nested within profile
     img {
         width: 100%;
         object-fit: contain;
@@ -40,42 +51,52 @@ section#first-section{
         
     }
 }
-
+//section tag and second-section id
 section#second-section{
+    text-align: justify;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
+//lang class
 .lang{
-    flex: 3;    
+    
+    flex: 3; 
+       
 }
-
+//lang-icons class
 .lang-icons{
     flex:1;
+
+    
+    //img tag nested within lang icons class
     img {
         width:15%;
         object-fit: contain;
     }
 }
 
-
+//social icons class
 .social-icons{
     
     text-align: right;
 }
+//social icons class and li tags
 .social-icons li{
     display:inline-block;
     list-style-type: none;
 }
+//social icons class li and a tags
 .social-icons li a{
     border-bottom: none;
 }
+//social icons class li and img tags
 .social-icons li img{
     width: 70px;
     height: 70px;
     margin-right: 20px;
 }
-
+//properties for the cityimg classes relating to parallax
 .cityimg1, .cityimg2, .cityimg3{
     position: relative;
     opacity: 0.90;
@@ -88,30 +109,32 @@ section#second-section{
 fixed = paralax
 scroll = normal
 */
-
+//cityimg1 class
 .cityimg1{
     background-image: url('../img/city1.jpg');
     min-height:100%;
 }
+//cityimg2 class
 .cityimg2{
     background-image: url('../img/city2.jpg');
     min-height:400px;
 }
+//cityimg3 class
 .cityimg3{
     background-image: url('../img/city3.jpg');
     min-height:400px;
 }
 
-
+//third-section id
 #third-section{
+    text-align: justify;
     
     
 }
 
-// .section{
-//     text-align: center;
-//     padding: 50px 80px;
-// }
+
+
+//ptext class changing the position and value
 .ptext{
     position: absolute;
     top: 50%;
@@ -119,16 +142,22 @@ scroll = normal
     text-align: left;
     color:#000;
     font-size: 27px;
+    font-family: 'Dancing Script', cursive;
 }
+//ptext and border class
 .ptext .border{
-    background-color:#111;
+    
+    opacity: 0.90;
     color: white;
     padding: 20px;
+
 }
+//ptext border and trans classes
 .ptext .border .trans{
     background-color: transparent;
 }
 
+//title class for mobile
 .title{
     display: flex;
     justify-content: center;
@@ -147,6 +176,7 @@ scroll = normal
     }
     
     
+    
 }
 //Desktop
 @media only screen and (min-width:961px){
@@ -156,7 +186,7 @@ scroll = normal
     }
 }
 
-
+//h2 tags
 h2{
     display: flex;
     justify-content: flex-end;
@@ -166,7 +196,7 @@ h2{
     font-weight: 300;
     
 }
-
+//nav tag
 nav{
     justify-content: center;
     display: flex;
@@ -192,6 +222,7 @@ nav{
     
     /* container <div> for positioning */
     .dropdown{
+        
         position: relative;
         display: inline-block;
     }

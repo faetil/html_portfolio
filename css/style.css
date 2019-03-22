@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700");
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,9 +29,9 @@ section#first-section {
 
 .h2-title {
   width: 100%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .bio {
@@ -133,10 +134,11 @@ scroll = normal
   text-align: left;
   color: #000;
   font-size: 27px;
+  font-family: 'Dancing Script', cursive;
 }
 
 .ptext .border {
-  background-color: #111;
+  opacity: 0.90;
   color: white;
   padding: 20px;
 }
