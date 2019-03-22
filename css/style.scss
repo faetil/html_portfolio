@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-
-
+footer{
+    display: flex;
+    justify-content: center;
+}
 
 body, html{
     height: 100%;
@@ -10,7 +12,55 @@ body, html{
     font-weight: 300;
     color:#666;
 }
+
+section#first-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.h2-title{
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.bio{
+    flex: 3;    
+}
+
+.profile{
+    flex: 1;
+    
+    
+    img {
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
+        
+    }
+}
+
+section#second-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.lang{
+    flex: 3;    
+}
+
+.lang-icons{
+    flex:1;
+    img {
+        width:15%;
+        object-fit: contain;
+    }
+}
+
+
 .social-icons{
+    
     text-align: right;
 }
 .social-icons li{
@@ -25,18 +75,7 @@ body, html{
     height: 70px;
     margin-right: 20px;
 }
-.lang-icons{
-    text-align: left;
-}
-.lang-icons li{
-    display:inline-block;
-    list-style-type: none;
-}
-.lang-icons li img{
-    width: 70px;
-    height: 70px;
-    margin-right: 20px;
-}
+
 .cityimg1, .cityimg2, .cityimg3{
     position: relative;
     opacity: 0.90;
@@ -62,20 +101,17 @@ scroll = normal
     background-image: url('../img/city3.jpg');
     min-height:400px;
 }
-#first-section{
 
-}
-#second-section{
 
-}
 #third-section{
-
+    
+    
 }
 
-.section{
-    text-align: center;
-    padding: 50px 80px;
-}
+// .section{
+//     text-align: center;
+//     padding: 50px 80px;
+// }
 .ptext{
     position: absolute;
     top: 50%;
@@ -90,18 +126,36 @@ scroll = normal
     padding: 20px;
 }
 .ptext .border .trans{
-background-color: transparent;
+    background-color: transparent;
 }
 
-@media(max-width: 568px){
+.title{
+    display: flex;
+    justify-content: center;
+}
+//tablet
+@media only screen and(min-width: 401px ) and (max-width: 960px) {
     .cityimg1 .cityimg2 .cityimg3{
         background-attachment: scroll;
     }
+    section{
+        width: 50%;
+    }
+    .social-icons{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
 }
- 
-.h2-title{
-    justify-content: left;
+//Desktop
+@media only screen and (min-width:961px){
+    .title{
+        display: flex;
+        justify-content: flex-end;
+    }
 }
+
 
 h2{
     display: flex;
@@ -120,50 +174,50 @@ nav{
     border-bottom: 1px solid rgba(0,0,0,.1);
     max-width: 100%;
 }
-img {
-width: 100%;
-}
-
-
-
-/* drop down button */
-.dropbtn{
-    font-family: 'Raleway', sans-serif;
-    background-color:  white;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-/* container <div> for positioning */
-.dropdown{
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown content */
-.dropdown-content {
-    font-family: 'Raleway', sans-serif;
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-/*links that are inside the dropdown*/
-.dropdown-content a {
-    color: #8c979e;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-/* change color upon hover*/
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* show the drop down when on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* change the color of background of drop down button when content is shown */
-.dropdown:hover .dropbtn{color: blue;}
+// img {
+    // width: 100%;
+    // }
+    
+    
+    
+    /* drop down button */
+    .dropbtn{
+        font-family: 'Raleway', sans-serif;
+        background-color:  white;
+        color: black;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+    
+    /* container <div> for positioning */
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    
+    /* Dropdown content */
+    .dropdown-content {
+        font-family: 'Raleway', sans-serif;
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    /*links that are inside the dropdown*/
+    .dropdown-content a {
+        color: #8c979e;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    /* change color upon hover*/
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    /* show the drop down when on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    /* change the color of background of drop down button when content is shown */
+    .dropdown:hover .dropbtn{color: blue;}

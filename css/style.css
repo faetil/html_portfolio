@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body, html {
   height: 100%;
   margin: 0;
@@ -6,6 +15,68 @@ body, html {
   font-family: 'Raleway' , sans-serif;
   font-weight: 300;
   color: #666;
+}
+
+section#first-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.h2-title {
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.bio {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.profile {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.profile img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+}
+
+section#second-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.lang {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.lang-icons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.lang-icons img {
+  width: 15%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .social-icons {
@@ -22,21 +93,6 @@ body, html {
 }
 
 .social-icons li img {
-  width: 70px;
-  height: 70px;
-  margin-right: 20px;
-}
-
-.lang-icons {
-  text-align: left;
-}
-
-.lang-icons li {
-  display: inline-block;
-  list-style-type: none;
-}
-
-.lang-icons li img {
   width: 70px;
   height: 70px;
   margin-right: 20px;
@@ -70,11 +126,6 @@ scroll = normal
   min-height: 400px;
 }
 
-.section {
-  text-align: center;
-  padding: 50px 80px;
-}
-
 .ptext {
   position: absolute;
   top: 50%;
@@ -94,16 +145,41 @@ scroll = normal
   background-color: transparent;
 }
 
-@media (max-width: 568px) {
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
   .cityimg1 .cityimg2 .cityimg3 {
     background-attachment: scroll;
   }
+  section {
+    width: 50%;
+  }
+  .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-.h2-title {
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+@media only screen and (min-width: 961px) {
+  .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 h2 {
@@ -129,10 +205,6 @@ nav {
   background-color: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   max-width: 100%;
-}
-
-img {
-  width: 100%;
 }
 
 /* drop down button */
