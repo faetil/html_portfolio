@@ -52,10 +52,16 @@ https://ibb.co/bgpcP0b
 https://ibb.co/6spS6wM
 #
 https://ibb.co/LYcQpxQ
+#tablet
+https://ibb.co/gdhvvq3
+#mobile
+https://ibb.co/HgdfRq2
+#
+https://ibb.co/86NpgSd
 
 
 #usability considerations
-Because it is a very simple webpage the usability of the website could be considered for 
+Because it is a very simple webpage the usability of the website could be considered for profile portfolio or something similar. It could also be used in a responsive website.
 
 #project plan & timeline
 I had originally planned the website to use bootstrap but it seemed to much trouble for what it was worth. so i decided to use flex. The time line i had for website was in this process: flowchart --> moodboard --> wireframe --> code website. 
