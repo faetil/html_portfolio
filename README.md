@@ -16,7 +16,8 @@ I have showed this portfolio in a city background image so it will give the feel
 I have created a webpage/portfolio using the parallax effect as the main selling point with flex incorporated into the sections of the website. I have also added a nav bar to the header so the user can navigate to different sections of the webpage. Social media links have been added to the header as well as the footer. There is also a mailto link added at the bottom section someone needs to email me.
 
 #site map
-https://ibb.co/bdq75Jm
+
+![alt text](https://ibb.co/bdq75Jm "hello")
 #
 https://ibb.co/tMB9m5x
 
