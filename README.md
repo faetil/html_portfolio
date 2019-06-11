@@ -17,11 +17,12 @@ I have created a webpage/portfolio using the parallax effect as the main selling
 
 #site map
 
-![alt text](https://ibb.co/bdq75Jm "hello")
+![alt tag](https://ibb.co/bdq75Jm "deso")
 #
 https://ibb.co/tMB9m5x
 
 #screenshots
+
 https://ibb.co/t3SwMpQ
 #
 https://ibb.co/DCPP4hf
